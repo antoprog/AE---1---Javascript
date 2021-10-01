@@ -1,0 +1,30 @@
+<!--Daniel Ortega Jimenez-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>R3-Mediana</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  
+  <script type="text/javascript">
+
+    /*Creo las variables*/
+    let numeros = [3,23,4,-2,43,54,67,5,3,6]; /*varaible que va a contener el array de 10 numeros*/
+    var mediana; /*varaible que va a contener la mediana de los numeros*/
+
+    numeros.sort(); /*mediante el metodo sort() ordeno los numeros del array de menor a mayor*/
+    
+    mediana = (numeros[numeros.length/2-1] + numeros[numeros.length/2])/2;
+
+    console.log('La mediana de los numeros "' +  numeros + '" es = ' + mediana); /*se imprime el resultado*/
+
+  </script>
+
+  <body>
+    <h1>Mediana - f12, para ver el programa :)</h1>
+  </body>
+</html>
+
