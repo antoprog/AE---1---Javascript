@@ -1,36 +1,41 @@
 <DOCTYPE html>
 
-    <html lang=en>
+    <html lang="en">
     
-        <head>
+        <head> <!--Tags requeridos-->
             <meta charset= "UTF-8">
             <title>Ejercicio Unidad formativa 1</title>
             <script languages = "JavaScript"></script>
         </head>
     
         <body>
-            <script tipe= Javascript>
-                var Array =[9];
-                var acumulador =0;
-                for (var i=0; i<array.lenght; i++){
-                    i[array]= math.random()*100;
+            <script > 
+                let nu = [10,2,40,2,74,9,85,65,20,-10]; /*Creacion de array con numeros*/
+                var acu=0;/*Creacion de variable de acumulador*/
+                var media=0; 
+                
+                
+                for (var i=0; i < nu.length; i++){           /*Creacion de un bucle for para recorrer el array*/
+                    console.log( "el numero del array es: " + nu[i]);
+                    if( nu[i] >=0 && nu[i] <= 100){        /*incluimos dentro del bucle una condicion de si el numero está entre 0 y 100 se sume al acumulador*/
+                        acu= nu[i]+acu;
+                        console.log( "el numero total acumulado es: "+ acu);
+                        
+                    }
+                    
                 }
-                acumulador = i[i]+acumulador;
-
+                
                 /*media*/
 
-                var media = (acumulador/array.lenght);
+                    media= (acu/(nu.length+1));
 
-                /*mediana*/
+                    console.log("La media es : "+ media);
 
-
-                /*moda*/
-
+               
             </script>
 
     
         </body>
     
     </html>
-    
     
